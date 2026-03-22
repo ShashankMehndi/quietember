@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
     return [
       { source: "/conditions", destination: "/services", permanent: true },
       { source: "/fees-insurance", destination: "/faq", permanent: true },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.quietember.in" }],
+        destination: "https://quietember.in/:path*",
+        permanent: true,
+      },
     ];
   },
   images: {

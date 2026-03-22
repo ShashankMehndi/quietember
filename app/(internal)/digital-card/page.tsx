@@ -156,7 +156,7 @@ export default function DigitalCardPage() {
             <div className="px-7 py-5 space-y-2.5">
               <WhiteContactRow icon="📞" label={SITE_PHONE} />
               <WhiteContactRow icon="✉" label={SITE_EMAIL} />
-              <WhiteContactRow icon="🌐" label="www.quietember.com" />
+              <WhiteContactRow icon="🌐" label={SITE_DOMAIN} />
               <WhiteContactRow icon="📍" label={SITE_ADDRESS} />
             </div>
 

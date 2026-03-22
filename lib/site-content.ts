@@ -3,8 +3,9 @@
 // ─── Brand identity ───────────────────────────────────────────────────────────
 export const SITE_NAME = "Quiet Ember";
 export const SITE_TAGLINE = "Emotional Well-being and Support";
-export const SITE_DOMAIN = "www.quietember.com";
-export const SITE_URL = "https://www.quietember.com";
+/** Public website hostname (apex). Email may use a different domain (e.g. quietember.com). */
+export const SITE_DOMAIN = "quietember.in";
+export const SITE_URL = "https://quietember.in";
 
 // ─── Contact ──────────────────────────────────────────────────────────────────
 export const SITE_PHONE = "+91 8078 191 151";
