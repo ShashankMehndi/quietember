@@ -1,27 +1,21 @@
-# Quiteember
+# Quiet Ember (`quietember`)
 
-Copy of the Tech bridge internal workspace, renamed for a separate instance.
-
-**Standalone internal workspace** — not part of Stunning Dentistry or any other repo in this folder.
+Next.js site for Quiet Ember — emotional well-being support (Hyderabad & online).
 
 ## Run locally
 
 ```bash
-cd quiteember
+cd quietember
 npm install
 npm run dev
 ```
 
-Open **http://localhost:3011** (Tech bridge uses 3010 if you run both.)
+Open **http://localhost:3011**.
 
-## Contents
+## Project layout
 
-| Area | Data path |
-|------|-----------|
-| Brand guidelines | `brand-guidelines/content/content.json` |
-| Content doctrine | `doctrine/*.md` |
-| Country targets | `country-targets/content/content.json` |
-
-Optional: place your logo at `public/logo.png` (or set `logoFile` in brand JSON).
-
-Replace copy in JSON/Markdown with your own company’s content when ready.
+| Area | Path |
+|------|------|
+| Site copy & data | `lib/site-content.ts` |
+| Pages (App Router) | `app/(site)/` |
+| Internal / design refs | `app/(internal)/`, `brand-guidelines/` |
