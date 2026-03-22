@@ -1,0 +1,88 @@
+{
+  "brandName": "Quiet Ember",
+  "tagline": "Emotional Well-being and Support",
+  "brandEssence": "A warm, steady presence when life feels heavy.",
+  "brandSpine": "Quiet Ember exists to make emotional wellness feel accessible, human, and unhurried — for anyone navigating grief, anxiety, relationship strain, or the quiet weight of everyday life.",
+  "brandMantra": "Feel it. Name it. Heal it.",
+  "colours": {
+    "primary": [
+      { "name": "Ember Teal", "hex": "#5BA8A0", "usage": "Primary brand colour — logo, headings, key UI elements" },
+      { "name": "Teal Dark", "hex": "#3D8A82", "usage": "Hover states, active links, depth" },
+      { "name": "Teal Light", "hex": "#8FCAC4", "usage": "Backgrounds, badges, soft accents" }
+    ],
+    "brand": [
+      { "name": "Coral", "hex": "#D4836A", "usage": "Warm accent — CTAs, highlights, 'Ember' in logo" },
+      { "name": "Coral Dark", "hex": "#B8664F", "usage": "Hover on coral elements" },
+      { "name": "Sage Green", "hex": "#8BAF84", "usage": "Secondary accent — calm, nature, growth" }
+    ],
+    "accent": [
+      { "name": "Sage Light", "hex": "#B4CEAF", "usage": "Soft section highlights, icon backgrounds" },
+      { "name": "Coral Light", "hex": "#E8A896", "usage": "Gentle tags, soft badges" },
+      { "name": "Warm Cream", "hex": "#FDF8F4", "usage": "Page background — warm, not cold" }
+    ],
+    "neutral": [
+      { "name": "Warm White", "hex": "#FEFCFA", "usage": "Card surfaces, hero areas" },
+      { "name": "Warm 50", "hex": "#FBF6F0", "usage": "Section alternating backgrounds" },
+      { "name": "Warm 100", "hex": "#F5ECE3", "usage": "Input fields, subtle dividers" },
+      { "name": "Border Warm", "hex": "#E2D5CA", "usage": "Card borders, dividers" },
+      { "name": "Text Dark", "hex": "#2C3E35", "usage": "Headings, primary text — deep green-tinted dark" },
+      { "name": "Text Body", "hex": "#4A5E56", "usage": "Body copy, descriptions" },
+      { "name": "Text Muted", "hex": "#7A9188", "usage": "Captions, meta, placeholders" }
+    ]
+  },
+  "typography": {
+    "heading": { "family": "Playfair Display", "weight": "400–700", "usage": "All headings — warm, serif elegance that feels approachable, not corporate" },
+    "body": { "family": "Inter", "weight": "300–500", "usage": "Body text, UI labels — clean, readable, calm" }
+  },
+  "gradients": [
+    { "name": "Teal Warmth", "css": "linear-gradient(135deg, #5BA8A0 0%, #8FCAC4 100%)", "usage": "Primary hero sections, card accents" },
+    { "name": "Coral Ember", "css": "linear-gradient(135deg, #D4836A 0%, #E8A896 100%)", "usage": "CTA buttons, highlight elements" },
+    { "name": "Sage Calm", "css": "linear-gradient(135deg, #8BAF84 0%, #B4CEAF 100%)", "usage": "Secondary sections, nature-themed accents" },
+    { "name": "Warm Fade", "css": "linear-gradient(180deg, #FEFCFA 0%, #FDF8F4 100%)", "usage": "Section transitions, page backgrounds" }
+  ],
+  "toneOfVoice": [
+    "Warm, not clinical — speak like a trusted friend who also happens to understand deeply.",
+    "Gentle, not weak — hold space without being passive or vague.",
+    "Honest, not alarming — name difficult feelings without dramatising them.",
+    "Encouraging, not prescriptive — invite people in, never push or shame.",
+    "Human, not corporate — avoid jargon, acronyms, and therapeutic distance.",
+    "Present, not hurried — the voice moves at the pace of the person reading.",
+    "Quietly confident — Quiet Ember doesn't shout; it illuminates."
+  ],
+  "brandPurpose": "To create a safe, warm space where people can explore their emotional world, find support, and build the inner resilience to live a life that feels like their own. Quiet Ember believes that healing is not a destination — it is a practice, tended like an ember: quietly, consistently, with care.",
+  "brandBeliefs": [
+    "Emotional wellness is not a luxury — it is a foundation",
+    "Everyone deserves to feel heard, without judgement",
+    "Healing happens at its own pace — and that is okay",
+    "Small, consistent steps create lasting change",
+    "Vulnerability is not weakness — it is the beginning of strength"
+  ],
+  "brandRole": "A warm, accessible emotional wellness companion — not a clinical institution, not a self-help product. Quiet Ember sits with people in the in-between: when life is neither crisis nor fine, when feelings are real but hard to name.",
+  "brandPersonality": {
+    "attributes": ["Warm", "Steady", "Empathetic", "Gentle", "Quietly Hopeful"],
+    "isNot": ["Not cold or clinical", "Not loud or urgent", "Not prescriptive or preachy"]
+  },
+  "languageGuardrails": {
+    "use": ["Feel", "Explore", "Support", "Together", "Safe", "Space", "Gentle", "Step by step", "Presence", "Nurture"],
+    "avoid": ["Diagnose", "Treat", "Cure", "Fix", "Should", "Must", "Failure", "Wrong", "Broken", "Crisis"]
+  },
+  "visualDirection": [
+    "Warmth — soft creams, teal, coral and sage; nothing cold or stark",
+    "Organic shapes — rounded corners, soft shadows, gentle gradients",
+    "White space — calm, unhurried layouts that breathe",
+    "Serif headings — Playfair Display creates warmth and trustworthiness",
+    "Photography — natural light, soft textures, human moments over stock poses"
+  ],
+  "brandGovernance": [
+    "Every piece of content must make someone feel seen, not sold to",
+    "Never use fear or urgency as a motivator",
+    "The brand voice is consistent — warm in a social post, warm in a legal document, warm in a testimonial"
+  ],
+  "contact": {
+    "phone": "",
+    "email": "",
+    "website": "",
+    "instagram": "",
+    "linkedin": ""
+  }
+}

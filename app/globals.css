@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Baskervville:ital@0;1&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:root {
+  --purple:       #352A44;
+  --purple-light: #4A3D5C;
+  --purple-muted: #6B5E7B;
+  --mint:         #E9FFF4;
+  --mint-dark:    #C8F0DC;
+  --accent-green: #5BA88A;
+  --coral:        #D4836A;
+  --coral-dark:   #B8664F;
+  --coral-light:  #E8A896;
+  --sage:         #8BAF84;
+  --sage-light:   #B4CEAF;
+  --cream:        #FAF2EA;
+  --warm-white:   #FDF8F4;
+  --warm-50:      #FBF6F0;
+  --warm-100:     #F5ECE3;
+  --warm-200:     #E8D8CC;
+  --warm-300:     #D4BEAF;
+  --text-dark:    #070807;
+  --text-body:    #070807E5;
+  --text-muted:   #070807A0;
+  --border:       #0000001A;
+
+  /* Legacy aliases for components not yet migrated */
+  --teal:        var(--accent-green);
+  --teal-dark:   var(--purple);
+  --teal-light:  var(--mint);
+}
+
+body {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+}
+
+h1, h2, h3 {
+  font-family: 'Baskervville', Georgia, serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.font-serif-brand {
+  font-family: 'Baskervville', Georgia, serif;
+}

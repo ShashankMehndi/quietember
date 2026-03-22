@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+
+.vercel
+.env
+.env*.local
+
+Thumbs.db
+.DS_Store
+
+# Local reference mirror and scraped assets (not needed for production)
+external/
+balancia_media/
