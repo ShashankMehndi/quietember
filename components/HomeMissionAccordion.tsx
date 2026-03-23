@@ -5,15 +5,15 @@ import FAQAccordion from "@/components/FAQAccordion";
 const items = [
   {
     q: "Who We Are",
-    a: "We're a team of licensed counseling psychologists united by one belief: therapy should feel like a safe conversation with someone who truly understands. Each therapist brings unique expertise, but we all share a commitment to meeting you exactly where you are—without judgment, without pressure.",
+    a: "Quiet Ember is a non-clinical mental health support initiative rooted in empathy, accessibility, and trauma-informed care. We work across India with educators, corporate teams, parents, students, and individuals — helping normalise emotional wellbeing and build spaces where people feel seen, supported, and able to ask for help without shame.",
   },
   {
-    q: "A Judgement Free Space",
-    a: "This is where you don't have to have it all together. Where messy is okay. Where your feelings are valid—all of them. You can be honest here. We'll listen without judging, without fixing, without telling you how you \"should\" feel. Just understanding. Just support.",
+    q: "Acceptance and Confidentiality",
+    a: "We create environments rooted in acceptance — where you can show up authentically. What you share stays private: we prioritise confidentiality and trust so you feel secure exploring your experiences with us.",
   },
   {
-    q: "Our Approach to Therapy",
-    a: "We use proven methods like CBT, EMDR, and attachment theory—but we tailor everything to you. Your therapy isn't one-size-fits-all. It's built around your story, your pace, your needs. Some need tools. Some need space to process. Most need both. We'll figure it out together.",
+    q: "Our Approach",
+    a: "Our approach is empathetic, holistic, lived, non-judgemental, and trauma-informed.",
   },
 ];
 

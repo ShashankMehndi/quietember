@@ -8,17 +8,21 @@ import { serviceSlugs, servicesBySlug, blogPosts, faqItems, type ServiceSlug } f
 import { CheckCircle2 } from "lucide-react";
 
 const serviceImages: Record<ServiceSlug, { hero: string; secondary: string }> = {
-  "psychological-first-aid": {
-    hero: "/images/GettyImages-2227878959.webp",
-    secondary: "/images/gettyimages-1471373623-2048x2048-2-1.webp",
+  "mental-health-first-aid": {
+    hero: "https://picsum.photos/seed/qe-mhfa-hero/900/900",
+    secondary: "https://picsum.photos/seed/qe-mhfa-sec/900/700",
   },
   "neurodiversity-awareness": {
-    hero: "/images/pexels-polina-tankilevitch-5234575.webp",
-    secondary: "/images/GettyImages-2227878959.webp",
+    hero: "https://picsum.photos/seed/qe-neuro-hero/900/900",
+    secondary: "https://picsum.photos/seed/qe-neuro-sec/900/700",
   },
   "parenting-workshops": {
-    hero: "/images/pexels-karola-g-6633769.webp",
-    secondary: "/images/pexels-polina-tankilevitch-5234575-796x1024.webp",
+    hero: "https://picsum.photos/seed/qe-parent-hero/900/900",
+    secondary: "https://picsum.photos/seed/qe-parent-sec/900/700",
+  },
+  "trauma-informed-practice-training": {
+    hero: "https://picsum.photos/seed/qe-tipt-hero/900/900",
+    secondary: "https://picsum.photos/seed/qe-tipt-sec/900/700",
   },
 };
 
@@ -33,9 +37,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const imgs = serviceImages[slug as ServiceSlug];
 
   const benefits = [
-    { title: "Pace that fits you", body: "No rushing milestones — we move at the speed your nervous system can trust." },
-    { title: "Plain language", body: "We explain approaches clearly so you always know what we are doing together." },
-    { title: "Whole-person view", body: "We pay attention to relationships, context, and the story behind the symptoms." },
+    { title: "Pace that fits you", body: "No rushing — we move at the speed your nervous system can trust." },
+    { title: "Plain language", body: "We explain what we offer clearly so you always know what to expect." },
+    { title: "Whole-person view", body: "We pay attention to relationships, context, and the story behind how you feel." },
     { title: "Flexible formats", body: "In-person or online, depending on what helps you feel safest and most consistent." },
   ];
 

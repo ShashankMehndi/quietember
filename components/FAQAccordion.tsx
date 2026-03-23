@@ -53,7 +53,7 @@ export default function FAQAccordion({
                   transition={{ duration: 0.25 }}
                   className="overflow-hidden"
                 >
-                  <p className="pb-5 pr-8 text-[14px] leading-relaxed" style={{ color: "var(--text-body)" }}>
+                  <p className="whitespace-pre-line pb-5 pr-8 text-[14px] leading-relaxed" style={{ color: "var(--text-body)" }}>
                     {item.a}
                   </p>
                 </motion.div>

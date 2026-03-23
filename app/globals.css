@@ -12,31 +12,41 @@ html {
 }
 
 :root {
-  --purple:       #352A44;
-  --purple-light: #4A3D5C;
-  --purple-muted: #6B5E7B;
-  --mint:         #E9FFF4;
-  --mint-dark:    #C8F0DC;
-  --accent-green: #5BA88A;
-  --coral:        #D4836A;
-  --coral-dark:   #B8664F;
-  --coral-light:  #E8A896;
-  --sage:         #8BAF84;
-  --sage-light:   #B4CEAF;
-  --cream:        #FAF2EA;
-  --warm-white:   #FDF8F4;
-  --warm-50:      #FBF6F0;
-  --warm-100:     #F5ECE3;
-  --warm-200:     #E8D8CC;
-  --warm-300:     #D4BEAF;
-  --text-dark:    #070807;
-  --text-body:    #070807E5;
-  --text-muted:   #070807A0;
-  --border:       #0000001A;
+  /* Logo-aligned palette */
+  --teal-deep:    #2A6B64;
+  --teal-mid:     #4A9E95;
+  --teal-muted:   #6DB8B0;
+  --mint:         #E8F8F5;
+  --mint-dark:    #B8EAE2;
+  --accent:       #C07840;
+  --accent-light: #E8A87B;
+  --sage:         #7AB890;
+  --sage-light:   #B4D4BE;
 
-  /* Legacy aliases for components not yet migrated */
-  --teal:        var(--accent-green);
-  --teal-dark:   var(--purple);
+  /* Surfaces — fresh mint-white, not beige */
+  --cream:        #FAFFFE;
+  --warm-white:   #FCFEFD;
+  --warm-50:      #F2FAF8;
+  --warm-100:     #E5F3F0;
+  --warm-200:     #D4E8E4;
+  --warm-300:     #B8D9D2;
+
+  --text-dark:    #0F2825;
+  --text-body:    #0F2825E5;
+  --text-muted:   #0F2825A0;
+  --border:       #2A6B6414;
+
+  /* Brand aliases (components reference these) */
+  --purple:       var(--teal-deep);
+  --purple-light: var(--teal-mid);
+  --purple-muted: var(--teal-muted);
+  --accent-green: var(--teal-mid);
+  --coral:        var(--accent);
+  --coral-dark:   #9D6128;
+  --coral-light:  var(--accent-light);
+
+  --teal:        var(--teal-mid);
+  --teal-dark:   var(--teal-deep);
   --teal-light:  var(--mint);
 }
 
@@ -51,7 +61,7 @@ h1, h2, h3 {
 }
 
 :focus-visible {
-  outline: 2px solid var(--purple);
+  outline: 2px solid var(--teal-deep);
   outline-offset: 2px;
 }
 

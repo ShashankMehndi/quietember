@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Non-clinical mental health support: psychological first aid (1:1), neurodiversity awareness for teams, and parenting workshops. Online and in Hyderabad, Telangana.",
+    "Non-clinical mental health support: mental health first aid (1:1), trauma-informed practice training, neurodiversity awareness for teams, and parenting workshops. Online and in Hyderabad, Telangana.",
   openGraph: {
     siteName: SITE_NAME,
     type: "website",

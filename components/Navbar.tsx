@@ -11,7 +11,6 @@ const aboutLinks = [
   { href: "/about", label: "About Quiet Ember" },
   { href: "/therapists", label: "Our team" },
   { href: "/blog", label: "Blog" },
-  { href: "/faq#pricing", label: "Pricing & booking" },
   { href: "/#testimonials", label: "Testimonials" },
   { href: "/faq", label: "FAQ" },
 ];
@@ -122,10 +121,10 @@ const mobileLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/therapists", label: "Our team" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
-  { href: "/faq#pricing", label: "Pricing & booking" },
   { href: "/#testimonials", label: "Testimonials" },
   { href: "/contact", label: "Contact" },
 ];
@@ -162,6 +161,13 @@ export default function Navbar() {
           <Dropdown label="About" items={aboutLinks} />
           <Dropdown label="Services" items={serviceLinks} />
           <Link
+            href="/pricing"
+            className="rounded-lg px-3 py-2 text-[14px] font-medium transition-colors hover:bg-black/[0.04] hover:text-[var(--purple)]"
+            style={{ color: "var(--text-dark)" }}
+          >
+            Pricing
+          </Link>
+          <Link
             href="/contact"
             className="rounded-lg px-3 py-2 text-[14px] font-medium transition-colors hover:bg-black/[0.04] hover:text-[var(--purple)]"
             style={{ color: "var(--text-dark)" }}
@@ -174,9 +180,9 @@ export default function Navbar() {
           <Image
             src="/logo-tagline.png"
             alt="Quiet Ember — Emotional Well-being and Support"
-            width={200}
-            height={64}
-            className="h-11 w-auto object-contain"
+            width={240}
+            height={80}
+            className="h-14 w-auto object-contain md:h-[4.25rem]"
             priority
           />
         </Link>

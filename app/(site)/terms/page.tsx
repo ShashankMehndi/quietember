@@ -4,9 +4,9 @@ const sections = [
   {
     title: "Disclaimer",
     body: [
-      "Quiet Ember provides non-clinical mental health support, psychological first aid, wellbeing education, and awareness-based guidance.",
-      "We are not a medical, psychiatric, or therapeutic service. Our services do not replace professional therapy, counselling, diagnosis, or treatment provided by licensed mental health professionals.",
-      "Engaging with our services does not create a therapist–client, clinician–patient, or medical relationship.",
+      "Quiet Ember provides non-clinical mental health support, mental health first aid, wellbeing education, and awareness-based guidance.",
+      "We are not a medical or psychiatric service. Our services do not replace diagnosis, treatment, or ongoing care from a licensed mental health professional.",
+      "Engaging with our services does not create a clinician–patient or medical relationship.",
     ],
   },
   {
@@ -14,7 +14,7 @@ const sections = [
     body: [
       "Our services are intended for education, awareness, and general wellbeing support.",
       "We do not provide clinical interventions, diagnosis or treatment, or emergency or crisis support.",
-      "Psychological first aid may involve discussion of distress. If a situation arises that is outside our scope — including risk to life, harm to others, involvement of minors, or the need for clinical or emergency care — the session will be stopped. Where required, appropriate external support services or authorities may be contacted.",
+      "Mental health first aid may involve discussion of distress. If a situation arises that is outside our scope — including risk to life, harm to others, involvement of minors, or the need for clinical or emergency care — the session will be stopped. Where required, appropriate external support services or authorities may be contacted.",
     ],
   },
   {

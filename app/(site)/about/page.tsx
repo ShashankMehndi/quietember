@@ -7,13 +7,56 @@ import FAQAccordion from "@/components/FAQAccordion";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Quiet Ember — our mission, values, and why we offer non-clinical mental health support, psychological first aid, and wellbeing programmes in Hyderabad and online.",
+    "Learn about Quiet Ember — our mission, vision, values, and non-clinical mental health support, mental health first aid, and wellbeing programmes in Hyderabad and online.",
 };
 
-const values = [
-  { title: "Our mission", body: "To offer emotional wellness that feels accessible, human, and unhurried — for anyone navigating grief, anxiety, relationship strain, or the quiet weight of everyday life." },
-  { title: "Our vision", body: "A world where asking for support is ordinary, gentle, and free from shame — where healing is practiced like tending an ember: quietly, consistently, with care." },
-  { title: "Our values", body: "Warmth over cold expertise. Honesty without alarm. Encouragement without pressure. You are never a case file — always a person." },
+const missionVisionValues = [
+  {
+    q: "Vision",
+    a: `To build a culture across India where mental wellness is normalised, openly spoken about, and actively supported within educational institutions, workplaces, and homes.
+
+To ensure that educators, corporate professionals, and parents are trauma-informed, neurodiversity-aware, and equipped with a strong understanding of mental health and its impact on individuals.
+
+To create environments where individuals feel seen, supported, and empowered to navigate their emotional well-being with clarity and confidence.`,
+  },
+  {
+    q: "Mission",
+    a: `To provide accessible, non-clinical mental health support and awareness to educators, corporate teams, parents, students, and professionals across India.
+
+To design and deliver workshops on trauma-informed practices, neurodiversity awareness, and mental health first aid for institutions, organisations, and individuals.
+
+To create safe, inclusive, and non-judgmental spaces that prioritise acceptance, confidentiality, and lived experiences.
+
+To promote emotional well-being, stress management, and self-awareness through practical, compassionate, and structured interventions.`,
+  },
+  {
+    q: "1. Empathy & Lived Understanding",
+    a: "We centre human experiences, meeting individuals with compassion, sensitivity, and respect.",
+  },
+  {
+    q: "2. Accessibility & Approachability",
+    a: "Mental health support should feel safe, relatable, and easy to engage with across diverse spaces.",
+  },
+  {
+    q: "3. Acceptance & Non-Judgment",
+    a: "We create environments rooted in acceptance, where individuals can show up authentically.",
+  },
+  {
+    q: "4. Trauma-Informed Practice",
+    a: "We recognise the impact of experiences and ensure our work is grounded in safety, awareness, and care.",
+  },
+  {
+    q: "5. Neurodiversity Affirmation",
+    a: "We value and respect different ways of thinking, learning, and experiencing the world.",
+  },
+  {
+    q: "6. Confidentiality & Trust",
+    a: "We prioritise privacy and build spaces where people feel secure sharing their experiences.",
+  },
+  {
+    q: "7. Growth & Empowerment",
+    a: "We enable individuals, families, and organisations to build awareness, resilience, and meaningful change.",
+  },
 ];
 
 export default function AboutPage() {
@@ -28,10 +71,10 @@ export default function AboutPage() {
             className="mt-3 text-4xl font-normal md:text-5xl"
             style={{ fontFamily: "'Baskervville', Georgia, serif", color: "var(--text-dark)" }}
           >
-            Healing is not a destination — it is a practice, tended with care
+            You are safe and accepted here
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-            We believe everyone deserves to feel heard without judgement. Quiet Ember exists for the moments between crisis and fine — when you need a steady, kind presence.
+            We believe everyone deserves to feel heard without judgement. Quiet Ember exists for the moments in between — when you need a steady, kind presence and clear next steps.
           </p>
         </div>
       </SectionWrapper>
@@ -39,11 +82,17 @@ export default function AboutPage() {
       <SectionWrapper tone="warm50">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-center">
           <div className="relative aspect-[4/5] w-full max-w-md justify-self-center overflow-hidden rounded-[1.5rem] shadow-lg lg:max-w-none">
-            <Image src="/images/GettyImages-1463774501-796x1024.webp" alt="Founder portrait" fill className="object-cover object-top" sizes="(max-width:1024px) 90vw, 45vw" />
+            <Image
+              src="https://images.unsplash.com/photo-1499208577869-343685ab61fd?w=900&q=85&auto=format&fit=crop"
+              alt="Calm, welcoming space"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width:1024px) 90vw, 45vw"
+            />
           </div>
           <div>
             <p className="text-[11px] font-bold uppercase tracking-widest" style={{ color: "var(--coral)" }}>
-              Founder
+              Why we exist
             </p>
             <h2
               className="mt-2 text-3xl font-normal md:text-4xl"
@@ -52,10 +101,10 @@ export default function AboutPage() {
               Why Quiet Ember exists
             </h2>
             <p className="mt-4 text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-              This practice began from a simple observation: many people wait until they are in crisis before they feel “allowed” to seek support. We wanted a different door — one that opens for the quiet struggles too.
+              Quiet Ember began from a simple observation: many people wait until they are in crisis before they feel “allowed” to seek support. We wanted a different door — one that opens for the quiet struggles too.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-              Our approach blends evidence-informed methods with plain language and patience. We are not here to fix you; we are here to sit beside you while you find what fits.
+              Our work blends evidence-informed approaches with plain language and patience. We are not here to “fix” you; we are here to sit beside you while you find what fits.
             </p>
             <Link
               href="/therapists"
@@ -88,13 +137,13 @@ export default function AboutPage() {
             className="text-center text-3xl font-normal md:text-4xl"
             style={{ fontFamily: "'Baskervville', Georgia, serif", color: "var(--text-dark)" }}
           >
-            Mission, vision, values
+            Mission, vision &amp; values
           </h2>
+          <p className="mx-auto mt-4 max-w-xl text-center text-[14px]" style={{ color: "var(--text-muted)" }}>
+            Tap a heading to read more — vision and mission first, then our seven core values.
+          </p>
           <div className="mt-10 space-y-4">
-            <FAQAccordion
-              items={values.map((v) => ({ q: v.title, a: v.body }))}
-              defaultOpen={0}
-            />
+            <FAQAccordion items={missionVisionValues} defaultOpen={0} />
           </div>
         </div>
       </SectionWrapper>
@@ -107,7 +156,11 @@ export default function AboutPage() {
           >
             Ready to explore together?
           </h2>
-          <Link href="/contact" className="mt-6 inline-flex rounded-full px-6 py-3 text-[14px] font-semibold text-white" style={{ backgroundColor: "var(--teal-dark)" }}>
+          <Link
+            href="/contact"
+            className="mt-6 inline-flex rounded-full px-6 py-3 text-[14px] font-semibold text-white"
+            style={{ backgroundColor: "var(--teal-dark)" }}
+          >
             Get in touch
           </Link>
         </div>

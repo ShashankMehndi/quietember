@@ -9,7 +9,7 @@ import { therapists, SITE_PHONE, SITE_PHONE_TEL } from "@/lib/site-content";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet the people behind Quiet Ember — psychological first aid, neurodiversity awareness, and parenting support in Hyderabad and online.",
+    "Meet the people behind Quiet Ember — mental health first aid, trauma-informed training, neurodiversity awareness, and parenting support in Hyderabad and online.",
 };
 
 export default function TherapistsPage() {

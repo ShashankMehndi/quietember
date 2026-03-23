@@ -107,14 +107,14 @@ export default function ScrollHero() {
               className="mt-4 max-w-lg text-[15px] leading-relaxed"
               style={{ color: "var(--text-body)" }}
             >
-              Psychological first aid, neurodiversity awareness, and parenting workshops — online and in Hyderabad.
+              Mental health first aid, neurodiversity awareness, parenting workshops, and trauma-informed training — online and in Hyderabad.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="mt-10"
+              className="mt-10 flex flex-col items-center gap-4 lg:items-start"
             >
               <Link
                 href="/contact"
@@ -126,6 +126,13 @@ export default function ScrollHero() {
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center rounded-full border-2 px-5 py-2.5 text-[13px] font-semibold transition-colors hover:bg-[var(--mint)]"
+                style={{ borderColor: "var(--teal-mid)", color: "var(--teal-deep)" }}
+              >
+                Free 15-min call — learn about MHFA, TIPT, or neurodiversity sessions
+              </Link>
             </motion.div>
           </div>
 
@@ -136,7 +143,7 @@ export default function ScrollHero() {
             className="order-1 relative mx-auto aspect-[4/5] w-full max-w-[480px] overflow-hidden rounded-[2rem] shadow-xl lg:order-2 lg:mx-0 lg:max-h-[min(88vh,720px)] lg:max-w-none"
           >
             <Image
-              src="/images/gettyimages-1471373623-2048x2048-2.webp"
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=85&auto=format&fit=crop"
               alt=""
               fill
               className="object-cover"
@@ -162,10 +169,10 @@ export default function ScrollHero() {
               }}
             >
               <Image
-                src="/images/GettyImages-1463774501.webp"
-                alt="Person finding peace"
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&q=85&auto=format&fit=crop"
+                alt="Calm, welcoming moment"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 80vw, 420px"
               />
               <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-t from-[var(--purple)]/20 to-transparent" />
@@ -200,11 +207,14 @@ export default function ScrollHero() {
                   >
                     Does this <em>sound</em> familiar?
                   </h3>
-                  <p className="mt-4 max-w-md text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-                    Exhausted from the constant worry?<br />
-                    Lying awake at night replaying conversations?<br />
-                    Relationships feel strained, and you barely recognize yourself?
-                  </p>
+                  <ul className="mt-4 max-w-md list-none space-y-2 text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
+                    <li>Feeling low or overwhelmed?</li>
+                    <li>Not quite feeling like yourself lately?</li>
+                    <li>Experiencing stress or burnout?</li>
+                    <li>Unsure about your mental health?</li>
+                    <li>Thinking about seeking support?</li>
+                    <li>Not sure where to begin when it comes to help?</li>
+                  </ul>
                   <a href="#hero-benefits" className="mt-6 inline-flex items-center gap-2 text-[14px] font-medium" style={{ color: "var(--purple)" }}>
                     <ChevronDown className="h-5 w-5 animate-bounce" />
                   </a>
@@ -238,7 +248,7 @@ export default function ScrollHero() {
                     Not overnight, but step by step
                   </h3>
                   <p className="mt-4 max-w-md text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-                    Quiet Ember offers structured, compassionate support — from a single PFA session to workshops for teams and parents. Explore what we offer and reach out when you are ready.
+                    Quiet Ember offers structured, compassionate support — from a single MHFA session to workshops for teams and parents. Explore what we offer and reach out when you are ready.
                   </p>
                 </motion.div>
               </motion.div>

@@ -76,19 +76,33 @@ export default function ContactForm({ variant = "default" }: { variant?: "defaul
       </div>
       <div>
         <label htmlFor="service" className={labelClass} style={labelStyle}>
-          What services are you interested in?
+          What are you interested in?
         </label>
         <select id="service" name="service" className={input} style={inputStyle} defaultValue="">
           <option value="" disabled>
-            Select a service
+            Select an option
           </option>
-          <option value="individual">Individual Therapy</option>
-          <option value="couples">Couples Therapy</option>
-          <option value="family">Family Therapy</option>
-          <option value="online">Online Therapy</option>
-          <option value="assessment">Assessment & Testing</option>
+          <option value="mhfa">Mental Health First Aid (1:1 session)</option>
+          <option value="neurodiversity">Neurodiversity Awareness (group / corporate)</option>
+          <option value="parenting">Parenting Workshop</option>
+          <option value="tipt">Trauma-Informed Practice Training (TIPT)</option>
+          <option value="free-call">Free 15-min introductory call</option>
           <option value="unsure">Not sure yet</option>
         </select>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label htmlFor="preferredDate" className={labelClass} style={labelStyle}>
+            Preferred date <span className="font-normal normal-case opacity-80">(optional)</span>
+          </label>
+          <input id="preferredDate" name="preferredDate" type="date" className={input} style={inputStyle} />
+        </div>
+        <div>
+          <label htmlFor="preferredTime" className={labelClass} style={labelStyle}>
+            Preferred time <span className="font-normal normal-case opacity-80">(optional)</span>
+          </label>
+          <input id="preferredTime" name="preferredTime" type="time" className={input} style={inputStyle} />
+        </div>
       </div>
       <div>
         <label htmlFor="message" className={labelClass} style={labelStyle}>
@@ -96,6 +110,9 @@ export default function ContactForm({ variant = "default" }: { variant?: "defaul
         </label>
         <textarea id="message" name="message" rows={4} required className={input} style={inputStyle} />
       </div>
+      <p className="text-[12px] leading-relaxed" style={{ color: "var(--text-muted)" }}>
+        You can also email us directly. If you pick a preferred date and time, we&apos;ll receive it with your message like a short booking request.
+      </p>
       <button
         type="submit"
         className="w-full rounded-full py-3.5 text-[14px] font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto sm:px-10"

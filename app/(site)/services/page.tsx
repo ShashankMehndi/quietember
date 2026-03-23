@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { HeartHandshake, Users, Sparkles, type LucideIcon } from "lucide-react";
+import { HeartHandshake, Users, Sparkles, BookOpen, type LucideIcon } from "lucide-react";
 import SectionWrapper from "@/components/SectionWrapper";
 import ServiceCard from "@/components/ServiceCard";
 import { servicesBySlug, serviceSlugs, type ServiceSlug } from "@/lib/site-content";
@@ -8,13 +8,14 @@ import { servicesBySlug, serviceSlugs, type ServiceSlug } from "@/lib/site-conte
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Psychological First Aid, Neurodiversity Awareness, and Parenting Workshops — non-clinical wellbeing support from Quiet Ember, based in Hyderabad, India.",
+    "Mental Health First Aid, Trauma-Informed Practice Training, Neurodiversity Awareness, and Parenting Workshops — non-clinical wellbeing support from Quiet Ember, based in Hyderabad, India.",
 };
 
 const icons: Record<ServiceSlug, LucideIcon> = {
-  "psychological-first-aid": HeartHandshake,
+  "mental-health-first-aid": HeartHandshake,
   "neurodiversity-awareness": Users,
   "parenting-workshops": Sparkles,
+  "trauma-informed-practice-training": BookOpen,
 };
 
 export default function ServicesPage() {
@@ -38,7 +39,7 @@ export default function ServicesPage() {
       </SectionWrapper>
 
       <SectionWrapper tone="warm50">
-        <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {serviceSlugs.map((slug) => {
             const s = servicesBySlug[slug];
             const Icon = icons[slug];

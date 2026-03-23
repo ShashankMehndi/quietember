@@ -7,7 +7,7 @@ import { PillButtonLink } from "@/components/PillButton";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
-    "What Quiet Ember offers, how pricing works, online and in-person sessions in Hyderabad, and how we differ from clinical therapy.",
+    "What Quiet Ember offers, how pricing works, online and in-person sessions in Hyderabad, and how we differ from clinical mental health services.",
 };
 
 export default function FAQPage() {
@@ -70,8 +70,9 @@ export default function FAQPage() {
           <p className="text-[15px]" style={{ color: "var(--text-body)" }}>
             Still have a question?
           </p>
-          <div className="mt-6 flex justify-center">
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
             <PillButtonLink href="/contact">Ask us directly</PillButtonLink>
+            <PillButtonLink href="/pricing">View pricing</PillButtonLink>
           </div>
         </div>
       </SectionWrapper>

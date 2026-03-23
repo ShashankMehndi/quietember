@@ -14,13 +14,13 @@ const quickLinksColA = [
 const quickLinksColB = [
   { href: "/faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
-  { href: "/faq#pricing", label: "Pricing & booking" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative mt-auto overflow-hidden rounded-t-[2rem] text-white" style={{ backgroundColor: "var(--purple)" }}>
+    <footer className="relative mt-auto overflow-hidden rounded-t-[2rem] text-white" style={{ backgroundColor: "var(--teal-deep)" }}>
       <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-center pt-8 opacity-25">
         <svg width="280" height="120" viewBox="0 0 280 120" fill="none" aria-hidden>
           <path d="M140 8 C 70 8 20 40 20 80" stroke="currentColor" strokeWidth="1.2" />

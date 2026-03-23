@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { User, Home, HeartHandshake, Sparkles, ClipboardList } from "lucide-react";
+import { Home, HeartHandshake, Sparkles, ClipboardList, BookOpen } from "lucide-react";
 import SectionWrapper from "@/components/SectionWrapper";
 import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
@@ -25,9 +25,10 @@ import {
 import { Shield, Award, Heart, Headphones, Lock } from "lucide-react";
 
 function serviceIconForHref(href: string) {
-  if (href.includes("psychological-first-aid")) return HeartHandshake;
+  if (href.includes("mental-health-first-aid")) return HeartHandshake;
   if (href.includes("neurodiversity-awareness")) return Sparkles;
   if (href.includes("parenting-workshops")) return Home;
+  if (href.includes("trauma-informed-practice-training")) return BookOpen;
   return ClipboardList;
 }
 
@@ -100,13 +101,13 @@ export default function HomePage() {
               How we can <em>support</em> you
             </h2>
             <h3
-              className="mx-auto mt-2 max-w-lg text-lg font-normal md:text-xl"
+              className="mx-auto mt-2 max-w-2xl text-lg font-normal md:text-xl"
               style={{ fontFamily: "'Baskervville', Georgia, serif", color: "var(--text-body)" }}
             >
-              Comprehensive care tailored to your unique needs.
+              Non-clinical support, workshops, and training — a welcoming first step when life feels heavy.
             </h3>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
             {homeServiceCards.map((card) => (
               <ServiceCard
                 key={card.href}
@@ -184,7 +185,13 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-2 lg:items-start">
           <div className="flex flex-col items-center lg:items-start">
             <div className="relative h-64 w-64 shrink-0 overflow-hidden rounded-full shadow-xl md:h-72 md:w-72">
-              <Image src="/images/pexels-karola-g-6633769.webp" alt="Quiet Ember practitioner" fill className="object-cover object-top" sizes="288px" />
+              <Image
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=85&auto=format&fit=crop"
+                alt="Warm, approachable welcome"
+                fill
+                className="object-cover object-center"
+                sizes="288px"
+              />
             </div>
           </div>
           <div>
@@ -198,13 +205,13 @@ export default function HomePage() {
               Welcome to Quiet Ember, where balance <em>isn&apos;t</em> about perfection, <em>it&apos;s</em> about being human.
             </h2>
             <p className="mt-2 text-[11px] font-bold uppercase tracking-widest" style={{ color: "var(--coral)" }}>
-              Meet our founder — Diana Fletcher
+              Meet the founders — [Your names here]
             </p>
             <p className="mt-4 text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-              We are not here to replace clinical care — we offer human, structured support so you can find your footing and walk forward with more clarity.
+              We take a <strong>holistic approach</strong> — we are not here to replace clinical care. We offer human, structured support so you can find your footing and walk forward with more clarity.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-              Whether you need a single psychological first aid session, a team workshop, or a parenting circle — we meet you where you are, without a one-size-fits-all script.
+              Whether you need a single mental health first aid session, a team workshop, trauma-informed training, or a parenting circle — we meet you where you are, without a one-size-fits-all script.
             </p>
             <div className="mt-8 rounded-[1.25rem] border px-4 py-2 md:px-6" style={{ backgroundColor: "var(--warm-white)", borderColor: "var(--border)" }}>
               <HomeMissionAccordion />
@@ -266,7 +273,13 @@ export default function HomePage() {
       <SectionWrapper tone="white">
         <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-2 lg:items-start">
           <div className="relative min-h-[380px] overflow-hidden rounded-[1.5rem] shadow-lg">
-            <Image src="/images/pexels-polina-tankilevitch-5234575.webp" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 45vw" />
+            <Image
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=85&auto=format&fit=crop"
+              alt="People connecting in a supportive conversation"
+              fill
+              className="object-cover"
+              sizes="(max-width:1024px) 100vw, 45vw"
+            />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-6">
               <div className="flex flex-wrap gap-2">
                 <a
@@ -293,7 +306,7 @@ export default function HomePage() {
               Ready to take the first step?
             </h2>
             <p className="mt-3 text-[14px] leading-relaxed" style={{ color: "var(--text-body)" }}>
-              Change begins with a single conversation. You don&apos;t need to have all the answers right now.
+              Change begins with a single conversation. You don&apos;t need to have all the answers right now. We offer a <strong>free 15-minute call</strong> if you want to learn about mental health first aid, TIPT, or our programmes before booking.
             </p>
             <div className="mt-6 flex flex-wrap gap-6 text-[15px]">
               <a href={SITE_PHONE_TEL} className="font-semibold hover:underline" style={{ color: "var(--purple)" }}>

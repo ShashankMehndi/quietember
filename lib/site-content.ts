@@ -8,8 +8,8 @@ export const SITE_DOMAIN = "quietember.in";
 export const SITE_URL = "https://quietember.in";
 
 // ─── Contact ──────────────────────────────────────────────────────────────────
-export const SITE_PHONE = "+91 8078 191 151";
-export const SITE_PHONE_TEL = "+918078191151";
+export const SITE_PHONE = "+91 8848 131 151";
+export const SITE_PHONE_TEL = "+918848131151";
 export const SITE_EMAIL = "support@quietember.com";
 /** In-person sessions are offered in Hyderabad, Telangana */
 export const SITE_ADDRESS = "Hyderabad, Telangana, India";
@@ -17,16 +17,16 @@ export const SITE_ADDRESS = "Hyderabad, Telangana, India";
 // ─── FAQ — short list used on home page ───────────────────────────────────────
 export const faqItems = [
   {
-    q: "Is Quiet Ember a therapy or counselling service?",
-    a: "No. Quiet Ember provides non-clinical mental health support — including psychological first aid, wellbeing education, and awareness-based guidance. Our services do not replace professional therapy, counselling, diagnosis, or treatment by a licensed mental health professional.",
+    q: "Is Quiet Ember a clinical counselling service?",
+    a: "No. Quiet Ember provides non-clinical mental health support — including mental health first aid, wellbeing education, and awareness-based guidance. Our services do not replace diagnosis, treatment, or care from a licensed mental health professional.",
   },
   {
     q: "Who can access your services?",
     a: "Our services are available to individuals aged 18 and above. Group programmes (neurodiversity awareness, parenting workshops) are open to university communities, corporates, and parents of neurodivergent children.",
   },
   {
-    q: "What is Psychological First Aid?",
-    a: "Psychological First Aid (PFA) is a 1:1 session of up to 60 minutes designed to offer immediate, compassionate support during or after a distressing experience. It is not therapy — it is a structured, human-centred approach to help you feel heard, stabilised, and pointed toward the right next steps.",
+    q: "What is Mental Health First Aid?",
+    a: "Mental Health First Aid (MHFA) is a 1:1 session of up to 60 minutes designed to offer immediate, compassionate support during or after a distressing experience. It is not clinical care — it is a structured, human-centred approach to help you feel heard, stabilised, and pointed toward the right next steps.",
   },
   {
     q: "Do you offer online sessions?",
@@ -34,7 +34,7 @@ export const faqItems = [
   },
   {
     q: "How much does a session cost?",
-    a: "Psychological First Aid sessions start at ₹799 online and ₹1,099 in person. Monthly subscriptions are also available for better value. Group programmes (neurodiversity awareness, parenting workshops) are priced separately — please see our Pricing page or contact us for a quote.",
+    a: "Mental Health First Aid sessions start at ₹799 online and ₹1,099 in person. Monthly subscriptions are also available for better value. Group programmes (neurodiversity awareness, parenting workshops) are priced separately — see our Pricing page or contact us for a quote.",
   },
   {
     q: "What is your cancellation policy?",
@@ -63,8 +63,8 @@ export const faqSections: FAQSectionBlock[] = [
     dotClass: "bg-[var(--teal)]",
     items: [
       {
-        q: "Is Quiet Ember a therapy or counselling service?",
-        a: "No. Quiet Ember provides non-clinical mental health support — psychological first aid, wellbeing education, and awareness programmes. We are not a medical, psychiatric, or therapeutic service and do not offer diagnosis, treatment, or clinical intervention.",
+        q: "Is Quiet Ember a clinical counselling service?",
+        a: "No. Quiet Ember provides non-clinical mental health support — mental health first aid, wellbeing education, and awareness programmes. We are not a medical or psychiatric service and do not offer diagnosis, treatment, or clinical intervention.",
       },
       {
         q: "Who can access your services?",
@@ -83,8 +83,8 @@ export const faqSections: FAQSectionBlock[] = [
     dotClass: "bg-[var(--coral)]",
     items: [
       {
-        q: "What is Psychological First Aid?",
-        a: "Psychological First Aid (PFA) is a 1:1 session of up to 60 minutes. It offers structured, compassionate support during or after a distressing experience — helping you feel heard, grounded, and clear on next steps. It is not therapy.",
+        q: "What is Mental Health First Aid?",
+        a: "Mental Health First Aid (MHFA) is a 1:1 session of up to 60 minutes. It offers structured, compassionate support during or after a distressing experience — helping you feel heard, grounded, and clear on next steps. It is not clinical care.",
       },
       {
         q: "What do your neurodiversity awareness sessions cover?",
@@ -104,7 +104,7 @@ export const faqSections: FAQSectionBlock[] = [
     items: [
       {
         q: "How much do sessions cost?",
-        a: "Psychological First Aid: ₹799 per online session, ₹1,099 per in-person session. Monthly subscriptions are available — ₹1,399 online (2 sessions) or ₹2,799 online (4 sessions); ₹1,899 offline (2 sessions) or ₹3,899 offline (4 sessions). Parenting workshops and neurodiversity awareness sessions are priced separately.",
+        a: "For full pricing tables, visit our Pricing page. Mental Health First Aid: ₹799 per online session, ₹1,099 per in-person session. Monthly subscriptions are available. Parenting workshops, neurodiversity awareness, and Trauma-Informed Practice Training are priced separately.",
       },
       {
         q: "How do I book a session?",
@@ -140,7 +140,8 @@ export const faqSections: FAQSectionBlock[] = [
 
 // ─── Focus areas shown on home / conditions pages ────────────────────────────
 export const focusAreasHome = [
-  "Psychological First Aid",
+  "Mental Health First Aid",
+  "Trauma-Informed Practice Training",
   "Neurodiversity Awareness",
   "Parenting Support",
   "Emotional Wellbeing",
@@ -168,16 +169,16 @@ export type HomeServiceCard = {
 
 export const homeServiceCards: HomeServiceCard[] = [
   {
-    href: "/services/psychological-first-aid",
-    title: "Psychological First Aid",
+    href: "/services/mental-health-first-aid",
+    title: "Mental Health First Aid",
     description:
-      "A structured 1:1 session of up to 60 minutes offering compassionate support during or after a distressing experience. Available online and in person.",
+      "Mental Health First Aid is the first point of contact for supporting people with mental health issues. A structured 1:1 session of up to 60 minutes — online and in person.",
     bullets: [
       "Safe space to be heard without judgement",
       "Practical tools to feel more grounded",
       "Clear guidance on next steps",
     ],
-    imageSrc: "/images/GettyImages-2227878959.webp",
+    imageSrc: "https://picsum.photos/seed/quietember-mhfa/800/1000",
     templateIllustration: "individual",
   },
   {
@@ -190,7 +191,7 @@ export const homeServiceCards: HomeServiceCard[] = [
       "Reduces stigma and builds empathy",
       "Physical resources included for in-person sessions",
     ],
-    imageSrc: "/images/pexels-polina-tankilevitch-5234575.webp",
+    imageSrc: "https://picsum.photos/seed/quietember-neuro/800/1000",
     templateIllustration: "couples",
   },
   {
@@ -203,8 +204,22 @@ export const homeServiceCards: HomeServiceCard[] = [
       "Take-home resources",
       "Practical tools for responding calmly",
     ],
-    imageSrc: "/images/pexels-karola-g-6633769.webp",
+    imageSrc: "https://picsum.photos/seed/quietember-parent/800/1000",
     templateIllustration: "family",
+  },
+  {
+    href: "/services/trauma-informed-practice-training",
+    title: "Trauma-Informed Practice Training (TIPT)",
+    description:
+      "Workshops on trauma-informed practices for educators, teams, and organisations — building safety, awareness, and compassionate responses in everyday settings.",
+    bullets: [
+      "Grounded in safety and awareness",
+      "Practical tools for institutions and workplaces",
+      "Delivered online or in person",
+      "Pricing and format tailored to your group — contact us",
+    ],
+    imageSrc: "https://picsum.photos/seed/quietember-tipt/800/1000",
+    templateIllustration: "individual",
   },
 ];
 
@@ -214,9 +229,9 @@ export type HomeTestimonial = { quote: string; name: string; context: string };
 export const homeTestimonials: HomeTestimonial[] = [
   {
     quote:
-      "I didn't know what psychological first aid was before this. Afterwards I felt like I could breathe again. It was exactly what I needed.",
+      "I didn't know what mental health first aid was before this. Afterwards I felt like I could breathe again. It was exactly what I needed.",
     name: "Priya",
-    context: "PFA participant",
+    context: "MHFA participant",
   },
   {
     quote:
@@ -240,7 +255,7 @@ export const homeTestimonials: HomeTestimonial[] = [
     quote:
       "I appreciated that the session was honest about what they can and can't offer. That clarity made me trust them more, not less.",
     name: "Aisha",
-    context: "PFA participant",
+    context: "MHFA participant",
   },
 ];
 
@@ -312,6 +327,15 @@ export const groupPricing = [
   },
 ];
 
+/** Trauma-Informed Practice Training — placeholder until final rates are confirmed */
+export const tiptPricing = {
+  rows: [
+    { label: "Half-day workshop (up to 25)", online: "TBC", offline: "TBC", note: "Contact us for a quote" },
+    { label: "Full-day workshop (up to 25)", online: "TBC", offline: "TBC", note: "Contact us for a quote" },
+    { label: "Institution / corporate package", online: "TBC", offline: "TBC", note: "Custom scope and pricing" },
+  ] as { label: string; online: string; offline: string; note?: string }[],
+};
+
 // ─── Therapists / team (update with real team details before launch) ──────────
 export type Therapist = {
   slug: string;
@@ -327,14 +351,14 @@ export type Therapist = {
 
 export const therapists: Therapist[] = [
   {
-    slug: "sarah-mitchell",
-    name: "Dr. Sarah Mitchell",
+    slug: "founder",
+    name: "[Your name here]",
     role: "Founder · Wellbeing Practitioner",
-    bio: "Sarah founded Quiet Ember to offer emotional wellbeing support that feels human, warm, and unhurried.",
+    bio: "Update this bio with your story, qualifications, and what draws you to this work — replace placeholder before launch.",
     longBio:
-      "Sarah founded Quiet Ember after recognising how many people wait until they are in crisis before allowing themselves to seek support. She wanted to create a different kind of door — one that is open for the quieter struggles too. Her work spans psychological first aid, neurodiversity awareness, and parenting support.",
-    credentials: ["Trained Psychological First Aider", "Neurodiversity Practitioner"],
-    specialties: ["Psychological First Aid", "Neurodiversity awareness", "Parenting support", "Wellbeing education"],
+      "We are updating our team page with full details and experience. Please replace this placeholder with your background: training in mental health first aid, neurodiversity, trauma-informed practice, workshops delivered, and any relevant professional experience you wish to share publicly.",
+    credentials: ["Mental Health First Aider", "Neurodiversity & inclusion practitioner"],
+    specialties: ["Mental Health First Aid", "Neurodiversity awareness", "Parenting support", "Trauma-informed practice"],
     imageSeed: "101",
     bookingHref: "/contact",
   },
@@ -343,32 +367,32 @@ export const therapists: Therapist[] = [
 // ─── Blog posts ───────────────────────────────────────────────────────────────
 export const blogPosts = [
   {
-    slug: "what-is-psychological-first-aid",
-    title: "What is Psychological First Aid — and when do you need it?",
-    excerpt: "PFA isn't therapy. Here's what it actually is, who it's for, and what a session feels like.",
+    slug: "what-is-mental-health-first-aid",
+    title: "What is Mental Health First Aid — and when might it help?",
+    excerpt: "MHFA isn't clinical care. Here's what it actually is, who it's for, and what a session feels like.",
     category: "Wellbeing",
     readTime: "5 min",
-    imageSrc: "/images/GettyImages-2227878959.webp",
+    imageSrc: "https://picsum.photos/seed/quietember-blog-mhfa/1200/800",
     body: `
-Psychological First Aid — often called PFA — is one of those terms that sounds clinical but is actually one of the most human things you can offer someone in distress.
+Mental Health First Aid — often called MHFA — is a human, structured way to support someone who is struggling emotionally.
 
-It is not therapy. It is not diagnosis. It is not advice-giving. It is structured, compassionate presence at a moment when someone needs to feel safe, heard, and clear about what comes next.
+It is not diagnosis. It is not clinical intervention. It is compassionate presence at a moment when someone needs to feel safe, heard, and clear about what comes next.
 
-**What PFA actually involves**
+**What MHFA actually involves**
 
-A PFA session at Quiet Ember lasts up to 60 minutes. In that time, the focus is on three things: helping you feel physically and emotionally safer, listening without judgement, and connecting you with any practical information or next steps that might help.
+A MHFA session at Quiet Ember lasts up to 60 minutes. In that time, the focus is on three things: helping you feel physically and emotionally safer, listening without judgement, and connecting you with any practical information or next steps that might help.
 
 We do not push you to talk about things you are not ready for. We do not interpret your experience. We simply sit with you in it.
 
 **Who is it for?**
 
-PFA is for anyone going through a difficult period — a loss, a sudden change, workplace stress, relationship upheaval, or simply a moment where things feel too heavy to carry alone. You do not need to be "in crisis" to benefit. You just need to feel like you could use a steady, informed presence for an hour.
+MHFA is for anyone going through a difficult period — a loss, a sudden change, workplace stress, relationship upheaval, or simply a moment where things feel too heavy to carry alone. You do not need to be "in crisis" to benefit. You just need to feel like you could use a steady, informed presence for an hour.
 
 **Online or in person?**
 
 Both. Online sessions are held via Google Meet or Microsoft Teams. In-person sessions are offered in Hyderabad, Telangana. The format does not change the quality of what we offer — choose whichever feels most comfortable for you.
 
-If you are unsure whether PFA is right for what you are going through, reach out and we will be honest with you about whether it fits.
+If you are unsure whether MHFA is right for what you are going through, reach out and we will be honest with you about whether it fits.
     `.trim(),
   },
   {
@@ -377,7 +401,7 @@ If you are unsure whether PFA is right for what you are going through, reach out
     excerpt: "Inclusion isn't a poster on the wall. Here are the practical shifts that make a real difference.",
     category: "Neurodiversity",
     readTime: "6 min",
-    imageSrc: "/images/pexels-polina-tankilevitch-5234575.webp",
+    imageSrc: "https://picsum.photos/seed/quietember-blog-work/1200/800",
     body: `
 Neuro-inclusion is one of those workplace topics that is easy to add to a policy document and much harder to live in practice. The gap between intention and experience is often where neurodivergent employees quietly struggle.
 
@@ -406,9 +430,9 @@ If you would like to bring a session to your organisation or university, contact
     excerpt: "The emotional landscape of parenting a neurodivergent child — and why support for parents matters just as much.",
     category: "Parenting",
     readTime: "7 min",
-    imageSrc: "/images/pexels-karola-g-6633769.webp",
+    imageSrc: "https://picsum.photos/seed/quietember-blog-parent/1200/800",
     body: `
-When your child is neurodivergent, the focus almost always lands on the child. Assessments, school plans, specialist appointments, therapies. This is necessary and right.
+When your child is neurodivergent, the focus almost always lands on the child. Assessments, school plans, specialist appointments, and support services. This is necessary and right.
 
 But the parent sitting in those waiting rooms — the one researching at midnight, trying to hold it together, wondering if they are doing enough — often goes unacknowledged.
 
@@ -435,9 +459,10 @@ Your child needs you regulated, resourced, and well. Taking an hour or two to in
 
 // ─── Services by slug ─────────────────────────────────────────────────────────
 export const serviceSlugs = [
-  "psychological-first-aid",
+  "mental-health-first-aid",
   "neurodiversity-awareness",
   "parenting-workshops",
+  "trauma-informed-practice-training",
 ] as const;
 export type ServiceSlug = (typeof serviceSlugs)[number];
 
@@ -445,10 +470,11 @@ export const servicesBySlug: Record<
   ServiceSlug,
   { title: string; short: string; bullets: string[]; heroSub: string }
 > = {
-  "psychological-first-aid": {
-    title: "Psychological First Aid",
+  "mental-health-first-aid": {
+    title: "Mental Health First Aid",
     short: "1:1 sessions of up to 60 minutes — online or in Hyderabad.",
-    heroSub: "A structured, compassionate space to feel heard and find your footing again.",
+    heroSub:
+      "Mental Health First Aid is the first point of contact for supporting people with mental health issues — a structured, compassionate space to feel heard and find your footing again.",
     bullets: [
       "Safe, non-judgemental listening",
       "Practical grounding and stabilisation",
@@ -476,6 +502,18 @@ export const servicesBySlug: Record<
       "Take-home resources",
       "Practical tools for responding calmly",
       "Online and in-person options",
+    ],
+  },
+  "trauma-informed-practice-training": {
+    title: "Trauma-Informed Practice Training (TIPT)",
+    short: "Workshops for educators, teams, and organisations — safety, awareness, and compassionate practice.",
+    heroSub:
+      "Build trauma-informed cultures in schools, workplaces, and communities — practical, respectful, and grounded in lived experience.",
+    bullets: [
+      "Understanding trauma's impact in everyday settings",
+      "Safety, choice, and trust in how you support others",
+      "Tools for educators, HR, and leaders",
+      "Custom formats — half-day, full-day, or ongoing programmes",
     ],
   },
 };

@@ -9,12 +9,12 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Quiet Ember — psychological first aid, workshops, and wellbeing support. Email, phone, or message us; we respond as soon as we can.",
+    "Contact Quiet Ember — mental health first aid, workshops, TIPT, and wellbeing support. Free 15-minute introductory call available. Email, phone, or message us.",
 };
 
 const steps = [
   "We read your message with care — usually the same day.",
-  "We reply within 24 hours with a time for a short, free call.",
+  "We reply within 24 hours and can schedule a free 15-minute call to explain MHFA, TIPT, neurodiversity sessions, or answer questions.",
   "You choose whether Quiet Ember feels like the right next step — no pressure.",
 ];
 
